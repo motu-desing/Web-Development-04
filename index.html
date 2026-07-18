@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Task 2: Responsive Design</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION - HAMBURGER MENU                 -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <i class="fas fa-code"></i>
+                    Code<span>Lab</span>
+                </a>
+            </div>
+            
+            <!-- Hamburger Menu Toggle -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HOME SECTION                                -->
+    <!-- ============================================ -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="badge">Level 2 - Task 2</span>
+                    <h1>Responsive Design <br><span>with CSS Media Queries</span></h1>
+                    <p>Converting a basic webpage into a responsive design that adapts to different screen sizes using CSS media queries.</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i> Learn More
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Responsive</h4>
+                        <p>All Devices</p>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-bars"></i>
+                        <h4>Hamburger</h4>
+                        <p>Mobile Menu</p>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-expand"></i>
+                        <h4>Flexible</h4>
+                        <p>Grid Layout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ABOUT SECTION                               -->
+    <!-- ============================================ -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2>Responsive Design <span>Made Simple</span></h2>
+                <div class="divider"></div>
+                <p>Creating web experiences that work seamlessly across all devices.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Desktop First</h3>
+                    <p>Optimized for large screens with multi-column layouts and full-featured interactions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <h3>Tablet Optimized</h3>
+                    <p>Adapts to medium screens with adjusted layouts and touch-friendly elements.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Ready</h3>
+                    <p>Fully responsive mobile experience with hamburger menu and optimized content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SERVICES / FEATURES SECTION                 -->
+    <!-- ============================================ -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>What Makes This <span>Responsive</span></h2>
+                <div class="divider"></div>
+                <p>Key responsive design features implemented in this project.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <h3>Hamburger Menu</h3>
+                    <p>Mobile-friendly navigation that collapses into a hamburger menu on smaller screens.</p>
+                    <span class="service-badge">Mobile</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-arrows-alt-h"></i>
+                    </div>
+                    <h3>Fluid Grid</h3>
+                    <p>Flexible grid system that adapts to different screen sizes using CSS Grid and Flexbox.</p>
+                    <span class="service-badge">Flexible</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Responsive Images</h3>
+                    <p>Images that scale properly and maintain aspect ratio across all devices.</p>
+                    <span class="service-badge">Adaptive</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h3>Typography Scaling</h3>
+                    <p>Font sizes that adjust to different screen sizes for optimal readability.</p>
+                    <span class="service-badge">Readable</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <h3>Touch Friendly</h3>
+                    <p>Buttons and interactive elements sized for easy touch interaction on mobile devices.</p>
+                    <span class="service-badge">Touch</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimized for fast loading and smooth performance on all devices.</p>
+                    <span class="service-badge">Fast</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT SECTION                             -->
+    <!-- ============================================ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Get In <span>Touch</span></h2>
+                <div class="divider"></div>
+                <p>Have questions? We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Reach out to us through any of the following channels.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Name</h4>
+                                <p>VENKAT SADHU</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>venkysadhu.8@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 7816004107</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="mailto:venkysadhu.8@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Send Email
+                        </a>
+                        <a href="tel:+917816004107" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="userName">
+                                <i class="fas fa-user"></i> Full Name
+                            </label>
+                            <input type="text" id="userName" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail">
+                                <i class="fas fa-envelope"></i> Email Address
+                            </label>
+                            <input type="email" id="userEmail" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userSubject">
+                                <i class="fas fa-tag"></i> Subject
+                            </label>
+                            <input type="text" id="userSubject" placeholder="Enter subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userMessage">
+                                <i class="fas fa-comment"></i> Message
+                            </label>
+                            <textarea id="userMessage" rows="5" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                      -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-code"></i> Code<span>Lab</span></h3>
+                    <p>Building responsive web experiences that work everywhere.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fas fa-envelope"></i> venkysadhu.8@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 7816004107</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeLab. All rights reserved. Made with <i class="fas fa-heart"></i></p>
+                <p class="small">Level 2 - Task 2: Responsive Design</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT                                  -->
+    <!-- ============================================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
